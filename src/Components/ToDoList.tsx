@@ -27,7 +27,7 @@ export default function ToDoList() {
                     To-Do List
                 </h1>
                 <h1>Created By Abdur Ratin🥰</h1>
-                <div className="w-96 bg-white rounded-lg shadow-md p-4">
+                <div className="w-85 bg-white rounded-lg shadow-md p-4">
                     {
                         tasks.map((input,indx) => <List index={indx} task={input} deleteTask={deleteTask}></List>)
                     }
