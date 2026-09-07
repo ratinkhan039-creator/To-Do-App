@@ -13,8 +13,9 @@ export default function ToDoList() {
         setTasks([...tasks,newTask])
     }
     const deleteTask = (task:any) => {
-        const deleteTask = tasks.filter((t,i) => {i !== task.index
+        const deleteTask = tasks.filter((t,i) => {
             console.log(t);
+            return i !== task.index
         });
         setTasks(deleteTask)
     }
