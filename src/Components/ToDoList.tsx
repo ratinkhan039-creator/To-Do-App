@@ -23,8 +23,8 @@ export default function ToDoList() {
     return (
         <>
             <div className="h-screen flex flex-col items-center justify-center gap-3 bg-gray-100">
-                <h1 className="text-3xl font-bold bg-red-200 px-23 py-3 rounded-2xl">
-                    My To-Do List
+                <h1 className="text-3xl font-bold bg-red-200 px-20 py-3 rounded-2xl">
+                    To-Do List
                 </h1>
                 <h1>Created By Abdur Ratin🥰</h1>
                 <div className="w-96 bg-white rounded-lg shadow-md p-4">
