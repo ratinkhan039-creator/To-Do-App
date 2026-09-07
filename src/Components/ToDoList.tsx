@@ -12,18 +12,21 @@ export default function ToDoList() {
         }
         setTasks([...tasks,newTask])
     }
-    const deleteTask = (task) => {
-        const deleteTask = tasks.filter((t,i) => i !== task.index);
+    const deleteTask = (task:any) => {
+        const deleteTask = tasks.filter((t,i) => {i !== task.index
+            console.log(t);
+        });
         setTasks(deleteTask)
     }
 
     return (
         <>
-            <div className="h-screen flex flex-col items-center justify-center bg-gray-100">
-                <h1 className="text-3xl font-bold mb-4 bg-red-200 px-23 py-3 rounded-2xl">
+            <div className="h-screen flex flex-col items-center justify-center gap-3 bg-gray-100">
+                <h1 className="text-3xl font-bold bg-red-200 px-23 py-3 rounded-2xl">
                     My To-Do List
                 </h1>
-                <div className="w-96 bg-white rounded-lg shadow-md p-4 mb-4">
+                <h1>Created By Abdur Ratin🥰</h1>
+                <div className="w-96 bg-white rounded-lg shadow-md p-4">
                     {
                         tasks.map((input,indx) => <List index={indx} task={input} deleteTask={deleteTask}></List>)
                     }

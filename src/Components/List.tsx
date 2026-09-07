@@ -17,7 +17,7 @@ export default function List({task,index,deleteTask}:any) {
                             setChackBox(e.target.checked)
                         }}/><p className={`text-green-500 ${chackBox && "text-red-500 line-through"}`}>{setIndexofTasks.task}</p>
                     </div>
-                    {chackBox && <button onClick={() => deleteTask(setIndexofTasks)}><FaRegTrashAlt className="text-red-500 hover:text-red-700" /></button>}
+                    {chackBox && <button onClick={() => deleteTask(setIndexofTasks)} className="text-red-500"><FaRegTrashAlt/></button>}
                 </li>
             </ul>
         </>
